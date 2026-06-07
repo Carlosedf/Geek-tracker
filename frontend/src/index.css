@@ -1,1 +1,51 @@
 @import 'tailwindcss';
+
+:root {
+  --font-sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --font-display: 'Arial Black', 'Trebuchet MS', sans-serif;
+  --text: #f6f7ff;
+  --background: #050816;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--background);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(155, 108, 255, 0.45);
+  color: #fff;
+}
